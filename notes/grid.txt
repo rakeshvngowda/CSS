@@ -1,0 +1,6 @@
+Basic Terminalogies
+* Columns
+* Rows
+* Cells
+* Grid Lines
+* Gutter

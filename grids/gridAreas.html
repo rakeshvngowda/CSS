@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            margin: 40px;
+        }
+        .sidebar {
+            grid-area: m1;
+        }
+        .header {
+            grid-area: m2;
+        }
+        .content {
+            grid-area: m3;
+        }
+        .footer {
+            grid-area: footer;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                "...... m2 m2"
+                "m1 m3 m3"
+                "footer footer footer"
+            ;
+            grid-gap: 10px;
+        }
+        .box {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 150%;
+        }
+        .header  {
+            background-color: #999;
+        }
+        .footer {
+            background-color: #999;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box header">Header</div>
+      <div class="box sidebar">Sidebar</div>
+      <div class="box content">Content
+        <br /> More content than we had before so this column is now quite tall
+      </div>
+      <div class="box footer">Footer</div>
+    </div>
+  </body>
+</html>

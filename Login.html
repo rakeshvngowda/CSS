@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+        }
+
+        .login-page {
+            background-color: gray;
+            width: 80%;
+            margin: auto;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Login page</h2>
+    <form class="login-page">
+        <div class="email-div">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="password-div">
+            <label for="password" id="password-label">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <button id="myBtn">Login</button>
+    </form>
+</body>
+</html>
